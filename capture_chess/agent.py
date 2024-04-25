@@ -1,4 +1,5 @@
 from tensorflow.keras.models import Model, clone_model
+from tensorflow.keras.losses import CategoricalCrossentropy
 from tensorflow.keras.layers import Input, Conv2D, Dense, Reshape, Dot, Activation, Multiply
 from tensorflow.keras.optimizers import SGD
 import numpy as np
@@ -106,7 +107,7 @@ class Agent(object):
         softmax_layer = Activation('softmax')(output_layer)
         legal_softmax_layer = Multiply()([legal_moves, softmax_layer])  # Select legal moves
         self.model = Model(inputs=[input_layer, R, legal_moves], outputs=[legal_softmax_layer])
-        self.model.compile(optimizer=optimizer, loss=policy_gradient_loss(R))
+        self.model.compile(optimizer="sgd", loss=CategoricalCrossentropy())
 
     def network_update(self, minibatch):
         """
