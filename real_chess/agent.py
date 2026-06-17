@@ -1,5 +1,6 @@
 from tensorflow.keras.layers import Input, Dense, Flatten, Concatenate, Conv2D, Dropout
-from tensorflow.keras.losses import mean_squared_error
+from tensorflow.keras.losses import MeanSquaredError
+mean_squared_error = MeanSquaredError()
 from tensorflow.keras.models import Model, clone_model, load_model
 from tensorflow.keras.optimizers import SGD, Adam, RMSprop
 import numpy as np  

@@ -1,5 +1,6 @@
 # ♟️ Chess AI — Reinforcement Learning with MCTS
 
+[![CI](https://github.com/Franion03/chess_ai_reinforcementlearning/actions/workflows/python-package.yml/badge.svg)](https://github.com/Franion03/chess_ai_reinforcementlearning/actions/workflows/python-package.yml)
 ![Python](https://img.shields.io/badge/Python-3.12+-blue?logo=python)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15+-orange?logo=tensorflow)
 ![License](https://img.shields.io/badge/License-GPL--3.0-green)
