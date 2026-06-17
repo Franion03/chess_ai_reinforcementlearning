@@ -1,5 +1,5 @@
-tensorflow
-numpy
-python-chess
-pandas
-matplotlib
+tensorflow>=2.15.0
+numpy>=1.24.0
+python-chess>=1.9.0
+pandas>=2.0.0
+matplotlib>=3.7.0
